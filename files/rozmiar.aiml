@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="ROZMIAR">
+	    <category>
+            <pattern>* 40</pattern>
+            <template>
+                <think><set name="ROZMIAR1_2">40</set></think>
+                <srai> HALO0 </srai>
+            </template> 
+        </category>
+	    
+	    <category>
+            <pattern>* 41</pattern>
+            <template>
+                <think><set name="ROZMIAR1_2">41</set></think>
+                <srai> HALO1 </srai>
+            </template> 
+        </category>
+	    
+        <category>
+            <pattern>* 42</pattern>
+            <template>
+                <think><set name="ROZMIAR1_2">42</set></think>
+                <srai> HALO2 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* 43</pattern>
+            <template>
+                <think><set name="ROZMIAR1_2">43</set></think>
+                <srai> HALO3 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* 44</pattern>
+            <template>
+                <think><set name="ROZMIAR1_2">44</set></think>
+                <srai> HALO4 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern> HALO0 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                pozostaje jeszcze kwestia na jaki sezon mają to być buty. Wybierasz buty całoroczne, zimowe czy tez letnie?
+                <think><set name="topic">SEZON</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> HALO1 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                pozostaje jeszcze kwestia na jaki sezon mają to być buty. Wybierasz buty całoroczne, zimowe czy tez letnie?
+                <think><set name="topic">SEZON</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> HALO2 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                pozostaje jeszcze kwestia na jaki sezon mają to być buty. Wybierasz buty całoroczne, zimowe czy tez letnie?
+                <think><set name="topic">SEZON</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> HALO3 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                pozostaje jeszcze kwestia na jaki sezon mają to być buty. Wybierasz buty całoroczne, zimowe czy tez letnie?
+                <think><set name="topic">SEZON</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> HALO4 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                pozostaje jeszcze kwestia na jaki sezon mają to być buty. Wybierasz buty całoroczne, zimowe czy tez letnie?
+                <think><set name="topic">SEZON</set></think> 
+            </template>
+        </category>
+	    
+	</topic>
+</aiml>

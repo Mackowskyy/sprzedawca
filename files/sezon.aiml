@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <topic name="SEZON">
+        <category>
+            <pattern>CALOROCZNE *</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* CALOROCZNE</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>CALOROCZNE</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>CALOROCZNYCH *</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* CALOROCZNYCH</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>CALOROCZNYCH</pattern>
+            <template>
+                <think><set name="SEZON1_2">całoroczne</set></think>
+                <srai> CALY </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZIMOWE *</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* ZIMOWE</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZIMOWE</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZIMOWYCH *</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* ZIMOWYCH</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZIMOWYCH</pattern>
+            <template>
+                <think><set name="SEZON1_2">zimowe</set></think>
+                <srai> ZIMA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>LETNIE *</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* LETNIE</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>LETNIE</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>LETNICH *</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* LETNICH</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>LETNICH</pattern>
+            <template>
+                <think><set name="SEZON1_2">letnie</set></think>
+                <srai> LATO </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+        <category>
+            <pattern> CALY </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                w takim razie wiemy już jakich butów poszukujesz. Podsumowując wszystkie dotychczasowe informacje:
+                rodzaj - <get name="RODZAJ1_2"></get>,
+                marka - <get name="MARKA1_2"></get>,
+                profil buta - <get name="PROFIL1_2"></get>,
+                rozmiar - <get name="ROZMIAR1_2"></get>,
+                sezon - <get name="SEZON1_2"></get>.
+                Czy chciałbyś coś zmienić?
+                <think><set name="topic">PODSUMOWANIE</set></think> 
+            </template>
+        </category>
+        
+    </topic>
+</aiml>

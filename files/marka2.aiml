@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="MARKA2">
+	    <category>
+            <pattern>TIMBERLAND *</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* TIMBERLAND</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>TIMBERLAND</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>TIMBERLANDY *</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>TIMBERLANDY</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* TIMBERLANDY</pattern>
+            <template>
+                <think><set name="MARKA1_2">timberland</set></think>
+                <srai> TIM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>COLUMBIA *</pattern>
+            <template>
+                <think><set name="MARKA1_2">columbia</set></think>
+                <srai> COL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* COLUMBIA</pattern>
+            <template>
+                <think><set name="MARKA1_2">columbia</set></think>
+                <srai> COL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>COLUMBIA</pattern>
+            <template>
+                <think><set name="MARKA1_2">columbia</set></think>
+                <srai> COL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>BYTOM *</pattern>
+            <template>
+                <think><set name="MARKA1_2">bytom</set></think>
+                <srai> BYT </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* BYTOM</pattern>
+            <template>
+                <think><set name="MARKA1_2">bytom</set></think>
+                <srai> BYT </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>BYTOM</pattern>
+            <template>
+                <think><set name="MARKA1_2">bytom</set></think>
+                <srai> BYT </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>WRANGLER *</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* WRANGLER</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>WRANGLER</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>WRANGLERY *</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* WRANGLERY</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>WRANGLERY</pattern>
+            <template>
+                <think><set name="MARKA1_2">wrangler</set></think>
+                <srai> WRA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+        <category>
+            <pattern> TIM </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o profil dla wybranej marki mogę zaproponować półbuty, do kostki albo za kostkę. Jaki rodzaj buta zatem będzie?
+                <think><set name="topic">PROFIL2</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> COL </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o profil dla wybranej marki mogę zaproponować półbuty, do kostki albo za kostkę. Jaki rodzaj buta zatem będzie?
+                <think><set name="topic">PROFIL2</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> BYT </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o profil dla wybranej marki mogę zaproponować półbuty, do kostki albo za kostkę. Jaki rodzaj buta zatem będzie?
+                <think><set name="topic">PROFIL2</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> WRA </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o profil dla wybranej marki mogę zaproponować półbuty, do kostki albo za kostkę. Jaki rodzaj buta zatem będzie?
+                <think><set name="topic">PROFIL2</set></think> 
+            </template>
+        </category>
+        
+	</topic>
+</aiml>

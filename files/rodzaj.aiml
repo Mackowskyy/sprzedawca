@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <topic name="RODZAJ">
+        <category>
+            <pattern>TAK *</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+    
+        <category>
+            <pattern>* TAK</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>CHETNIE *</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* CHETNIE</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>OCZYWISCIE *</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* OCZYWISCIE</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+        <category>
+            <pattern>POTWIERDZENIE</pattern>
+            <template>
+                <random>
+                    <li>W porządku, przechodząc do rzeczy, </li>
+                    <li>Dobrze, przechodząc do rzeczy, </li>
+                    <li>Świetnie, przechodząc do rzeczy, </li>
+                </random>
+                na naszej stronie dostępne są buty specjalistyczne przeznaczone do kilku najpopularniejszych dyscyplin sportowych oraz buty uniwersalne,
+                które są idealne do noszenia na codzień np. na spacer czy też do biegania. Który rodzaj bardziej cię interesuje?
+            </template>
+        </category>
+
+        <category>
+            <pattern> MARKA1 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o markę butów uniwersalnych to mamy dla ciebie do zaproponowania poszczególne modele z marek
+                ADIDAS, NIKE, PUMA oraz REEBOK. Na którą markę chciałbyś się zdecydować?
+                <think><set name="topic">MARKA1</set></think> 
+            </template>
+        </category>
+
+        <category>
+            <pattern> MARKA2 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                jeśli chodzi o markę butów specjalistycznych to mamy dla ciebie do zaproponowania poszczególne modele z marek
+                TIMBERLAND, COLUMBIA, BYTOM oraz WRANGLER. Na którą markę chciałbyś się zdecydować?
+                <think><set name="topic">MARKA2</set></think> 
+            </template>
+        </category>
+
+        <category>
+            <pattern> UNIWERSALNE </pattern>
+            <template>
+                <think><set name="RODZAJ1_2">uniwersalne</set></think>
+                <srai> MARKA1 </srai> 
+            </template>
+        </category>
+
+        <category>
+            <pattern>UNIWERSALNE *</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* UNIWERSALNE</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>UNIWERSALNYCH *</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* UNIWERSALNYCH</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>UNIWERSALNYM *</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* UNIWERSALNYM</pattern>
+            <template> 
+                <srai> UNIWERSALNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern> SPECJALISTYCZNE </pattern>
+            <template>
+                <srai> MARKA2 </srai> 
+                <think><set name="RODZAJ1_2">specjalistyczne</set></think>
+            </template>
+        </category>
+
+        <category>
+            <pattern>SPECJALISTYCZNE *</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* SPECJALISTYCZNE</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>SPECJALISTYCZNYCH *</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* SPECJALISTYCZNYCH</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>SPECJALISTYCZNYM *</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+
+        <category>
+            <pattern>* SPECJALISTYCZNYM</pattern>
+            <template> 
+                <srai> SPECJALISTYCZNE </srai>
+            </template> 
+        </category>
+        
+    </topic>
+</aiml>

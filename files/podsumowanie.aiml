@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <topic name="PODSUMOWANIE">
+        <category>
+            <pattern>NIE</pattern>
+            <template> 
+                <srai> ZAPRZECZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIE *</pattern>
+            <template> 
+                <srai> ZAPRZECZENIE </srai>
+            </template> 
+        </category>
+    
+        <category>
+            <pattern>* NIE</pattern>
+            <template> 
+                <srai> ZAPRZECZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>TAK</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>TAK *</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+    
+        <category>
+            <pattern>* TAK</pattern>
+            <template> 
+                <srai> POTWIERDZENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZAPRZECZENIE</pattern>
+            <template> 
+                <random>
+                    <li>Dobrze, </li>
+                    <li>Wspaniale, </li>
+                </random>
+            wszystko w takim razie zostało ustalone. Propozycje modeli spełniających podane wymagania zostaną przesłane
+            na twoją skrzynkę mailową. Do zobaczenia!
+            </template>
+        </category>
+        
+        <category>
+            <pattern>POTWIERDZENIE</pattern>
+            <template> 
+                <random>
+                    <li>Dobrze, </li>
+                    <li>Wspaniale, </li>
+                </random>
+            w takim razie czy chciałbyś ponownie usłyszeć o rodzajach dostępnego obuwia?
+            <think><set name="topic">RODZAJ</set></think> 
+            </template>
+        </category>
+        
+    </topic>
+</aiml>

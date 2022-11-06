@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="PROFIL2">
+	    <category>
+            <pattern>POLBUTY *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* POLBUTY</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>POLBUTY</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>POLBUTOW *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* POLBUTOW</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>POLBUTOW</pattern>
+            <template>
+                <think><set name="PROFIL1_2">półbuty</set></think>
+                <srai> POL </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>DO KOSTKI *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">do kostki</set></think>
+                <srai> DOK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* DO KOSTKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">do kostki</set></think>
+                <srai> DOK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>DO KOSTKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">do kostki</set></think>
+                <srai> DOK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZA KOSTKE *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">za kostkę</set></think>
+                <srai> ZAK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* ZA KOSTKE</pattern>
+            <template>
+                <think><set name="PROFIL1_2">za kostkę</set></think>
+                <srai> ZAK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ZA KOSTKE</pattern>
+            <template>
+                <think><set name="PROFIL1_2">za kostkę</set></think>
+                <srai> ZAK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+	    <category>
+            <pattern> POL </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> DOK </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> ZAK </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+	    
+	</topic>
+</aiml>

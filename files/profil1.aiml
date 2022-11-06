@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="PROFIL1">
+	    <category>
+            <pattern>PILKA NOZNA *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* PILKA NOZNA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PILKA NOZNA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PILKI NOZNEJ *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* PILKI NOZNEJ</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PILKI NOZNEJ</pattern>
+            <template>
+                <think><set name="PROFIL1_2">pilka nozna</set></think>
+                <srai> NOZNA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>SIATKOWKA *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* SIATKOWKA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>SIATKOWKA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>SIATKOWKI *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* SIATKOWKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>SIATKOWKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">siatkowka</set></think>
+                <srai> SIATA </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>KOSZYKOWKA *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* KOSZYKOWKA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>KOSZYKOWKA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>KOSZYKOWKI *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* KOSZYKOWKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>KOSZYKOWKI</pattern>
+            <template>
+                <think><set name="PROFIL1_2">koszykowka</set></think>
+                <srai> KOSZ </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>GOLF *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* GOLF</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>GOLF</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>GOLFA *</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* GOLFA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>GOLFA</pattern>
+            <template>
+                <think><set name="PROFIL1_2">golf</set></think>
+                <srai> GOLF1 </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+	    <category>
+            <pattern> NOZNA </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> SIATA </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> KOSZ </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> GOLF1 </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                co do wyboru odpowiedniego rozmiaru na naszej stronie dostępne sa rozmiary 40-44. Który będzie odpowiedni dla ciebie?
+                <think><set name="topic">ROZMIAR</set></think> 
+            </template>
+        </category>
+	    
+	</topic>
+</aiml>

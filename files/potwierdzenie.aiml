@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <topic name="ZAPYTANIE">
+	<category>
+        <pattern>TAK</pattern>
+        <template> 
+            <srai> POTWIERDZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <template> 
+            <srai> NIEZROZUMIENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>TAK *</pattern>
+        <template> 
+            <srai> POTWIERDZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>* TAK</pattern>
+        <template> 
+            <srai> POTWIERDZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>NIE</pattern>
+        <template> 
+            <srai> ZAPRZECZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>NIE *</pattern>
+        <template> 
+            <srai> ZAPRZECZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>* NIE</pattern>
+        <template> 
+            <srai> ZAPRZECZENIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>ZAPRZECZENIE</pattern>
+        <template> 
+            <random>
+                <li>Dobrze, </li>
+                <li>Nie ma sprawy, </li>
+            </random>
+        zostawię Ci chwilę na zastanowienie się. Czy mogę już ci pomóc?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NIEZROZUMIENIE</pattern>
+        <template> 
+            <random>
+                <li>Przepraszam, </li>
+                <li>Przykro mi, nie zrozumiałem, </li>
+            </random>
+        czy mógłbyś powtórzyć?
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>POTWIERDZENIE</pattern>
+        <template> 
+            <random>
+                <li>Dobrze,</li>
+                <li>Świetnie,</li>
+            </random>
+        czy przedstawić ci naszą ofertę?
+        <think><set name="topic">RODZAJ</set></think> 
+        </template>
+    </category>
+    </topic>
+</aiml>

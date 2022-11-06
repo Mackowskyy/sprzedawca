@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>DZIEN DOBRY *</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>* DZIEN DOBRY</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>WITAM *</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>* WITAM</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>DOBRY WIECZOR *</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>* DOBRY WIECZOR</pattern>
+        <template> 
+            <srai> POWITANIE </srai>
+        </template> 
+    </category>
+    
+    <category>
+        <pattern>POWITANIE</pattern>
+        <template> 
+            <random>
+                <li>Dzień dobry, </li>
+                <li>Witam serdecznie, </li>
+                <li>Witaj, </li>
+            </random>
+        znajdujesz się w sekcji dopasowania odpowiedniego obuwia sportowego. Czy mogę ci jakoś pomóc?
+        <think><set name="topic">ZAPYTANIE</set></think> 
+        </template>
+    </category>
+</aiml>

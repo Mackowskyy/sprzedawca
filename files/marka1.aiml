@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="MARKA1">
+	    <category>
+            <pattern>ADIDAS *</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ADIDAS</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* ADIDAS</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ADIDASY *</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>ADIDASY</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* ADIDASY</pattern>
+            <template>
+                <think><set name="MARKA1_2">adidas</set></think>
+                <srai> ADI </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIKE *</pattern>
+            <template>
+                <think><set name="MARKA1_2">nike</set></think>
+                <srai> NIK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIKE</pattern>
+            <template>
+                <think><set name="MARKA1_2">nike</set></think>
+                <srai> NIK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* NIKE</pattern>
+            <template>
+                <think><set name="MARKA1_2">nike</set></think>
+                <srai> NIK </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PUMA *</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PUMA</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PUMY</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>PUMY *</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* PUMY</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* PUMA</pattern>
+            <template>
+                <think><set name="MARKA1_2">puma</set></think>
+                <srai> PUM </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>REEBOK *</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>REEBOK</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* REEBOK</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>REEBOKI *</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>* REEBOKI</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>REEBOKI</pattern>
+            <template>
+                <think><set name="MARKA1_2">reebok</set></think>
+                <srai> REE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <template> 
+                <srai> NIEZROZUMIENIE </srai>
+            </template> 
+        </category>
+        
+        <category>
+            <pattern>NIEZROZUMIENIE</pattern>
+            <template> 
+                <random>
+                    <li>Przepraszam, </li>
+                    <li>Przykro mi, nie zrozumiałem, </li>
+                </random>
+            czy mógłbyś powtórzyć?
+            </template>
+        </category>
+        
+        <category>
+            <pattern> ADI </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                spośród dostępnych dyscyplin sportowych mogę zapronować buty przystosowane do piłki nożnej, siatkówki, koszykówki oraz golfa.
+                Na którą dyscyplinę chciałbyś się zdecydować?
+                <think><set name="topic">PROFIL1</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> NIK </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                spośród dostępnych dyscyplin sportowych mogę zapronować buty przystosowane do piłki nożnej, siatkówki, koszykówki oraz golfa.
+                Na którą dyscyplinę chciałbyś się zdecydować?
+                <think><set name="topic">PROFIL1</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> PUM </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                spośród dostępnych dyscyplin sportowych mogę zapronować buty przystosowane do piłki nożnej, siatkówki, koszykówki oraz golfa.
+                Na którą dyscyplinę chciałbyś się zdecydować?
+                <think><set name="topic">PROFIL1</set></think> 
+            </template>
+        </category>
+        
+        <category>
+            <pattern> REE </pattern>
+            <template>
+                <random>
+                    <li>Świetnie, </li>
+                    <li>W porządku, </li>
+                    <li>Dobrze, </li>
+                </random>
+                spośród dostępnych dyscyplin sportowych mogę zapronować buty przystosowane do piłki nożnej, siatkówki, koszykówki oraz golfa.
+                Na którą dyscyplinę chciałbyś się zdecydować?
+                <think><set name="topic">PROFIL1</set></think> 
+            </template>
+        </category>
+        
+	</topic>
+</aiml>
